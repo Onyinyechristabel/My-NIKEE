@@ -6,18 +6,35 @@ const nav = document.querySelector(".navbar");
 const hidden = document.querySelector(".nav__suggestions");
 const content = document.querySelector(".content");
 const footer = document.querySelector(".footer");
+const circular = document.querySelector(".circular");
+let inspect = "closed";
+let nikky = "tapped";
 const myFunction = function () {
   document.querySelector(".hero").classList.remove("hide");
   document.querySelector(".curtain").classList.add("hide");
 };
 
 nav.onclick = function () {
-  content.classList.add("hide");
-  hidden.classList.remove("hidden");
+  if (inspect === "closed") {
+    content.classList.add("hide");
+    hidden.classList.remove("hidden");
+    inspect = "opened";
+  } else if (inspect === "opened") {
+    hidden.classList.add("hidden");
+    content.classList.remove("hide");
+    inspect = "closed";
+  }
 };
-nav.onclick = function () {
-  hidden.classList.add("hidden");
-  content.classList.remove("hide");
+circular.onclick = function () {
+  gsap.to(".hero", { backgroundColor: "black", color: "white" });
+
+  if (nikky === "tapped") {
+    gsap.to(".hero", { backgroundColor: "black", color: "white" });
+    nikky = "untapped";
+  } else {
+    gsap.to(".hero", { backgroundColor: "white", color: "black" });
+    nikky = "tapped";
+  }
 };
 
 const animation = gsap

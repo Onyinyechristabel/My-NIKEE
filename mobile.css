@@ -1,0 +1,125 @@
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --white: #ededef;
+    --yellow: #aaad73;
+    --black: #2c2c2c;
+    --green: #42a189;
+    --purple: #7f76c7;
+    --red: #cf6c83;
+    --grey: #a6a6a6;
+  }
+  body {
+    height: 100vh;
+  }
+  .curtain {
+    background-color: black;
+    height: 0vh;
+  }
+  html {
+    font-size: calc(100vw / 1440 * 10);
+  }
+  .nike {
+    position: absolute;
+    width: 16rem;
+    left: 62rem;
+    top: 40vh;
+  }
+  .hero {
+    display: flex;
+    background-color: #ededef;
+    padding: 4rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nikesign {
+    width: 10rem;
+  }
+  .circular {
+    background-color: #433e3e;
+    border-radius: 50%;
+    height: 11rem;
+    width: 11rem;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nikename {
+    font-family: nike-font;
+    font-size: 28rem;
+    text-align: center;
+    line-height: 75%;
+  }
+  .airmax {
+    font-family: nike-font;
+    text-align: center;
+    font-size: 12rem;
+    margin-top: 2rem;
+  }
+  .navbar {
+    width: 15rem;
+  }
+  .nikeshoe {
+    width: 39rem;
+    position: absolute;
+    top: 44vh;
+    left: 53rem;
+    filter: grayscale(1);
+    transform: rotate(28deg);
+  }
+  .step {
+    width: 65rem;
+    margin-left: 67rem;
+    margin-top: 2rem;
+    font-family: nike-font;
+    font-weight: 100;
+    font-size: 4rem;
+  }
+  .footer__text {
+    font-size: 4rem;
+    margin-top: 9rem;
+    font-family: nike-font;
+  }
+
+  .circle {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+  }
+  .circles {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 9rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hide {
+    display: none;
+  }
+  .nav__suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .nav__suggestion {
+    width: 25rem;
+    color: #433e3e;
+    font-family: nike-font;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .hidden {
+    display: none;
+  }
+}
